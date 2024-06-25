@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="672.0" prefWidth="919.0" style="-fx-background-color: #2C3539;"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.server.UsersList">
+    <children>
+        <ImageView fitHeight="721.0" fitWidth="1012.0" layoutX="-93.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@testt.png"/>
+            </image>
+        </ImageView>
+        <Button fx:id="Back" layoutX="21.0" layoutY="616.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="132.0"
+                style="-fx-background-color: ffcb05;" text="Back">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Button>
+        <Label layoutX="87.0" layoutY="115.0" text="Online Users" textFill="#fffefe">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Label>
+        <Label layoutX="505.0" layoutY="115.0" text="Offline Users" textFill="#fffefe">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Label>
+        <TextArea fx:id="online" layoutX="87.0" layoutY="160.0" prefHeight="324.0" prefWidth="338.0"/>
+        <TextArea fx:id="offline" layoutX="505.0" layoutY="160.0" prefHeight="324.0" prefWidth="338.0"/>
+    </children>
+</AnchorPane>

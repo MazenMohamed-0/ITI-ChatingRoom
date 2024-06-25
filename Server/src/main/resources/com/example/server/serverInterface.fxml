@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="919.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.server.ServerInterface">
+    <children>
+        <Pane prefHeight="672.0" prefWidth="436.0" style="-fx-background-color: #2C3539;">
+            <children>
+                <ImageView fitHeight="257.0" fitWidth="386.0" layoutX="14.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@LOGO.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="signOut" layoutX="102.0" layoutY="609.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="232.0" style="-fx-background-color: ffcb05;" text="Sign Out">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+              <Button fx:id="checkUsersList" layoutX="103.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="232.0" style="-fx-background-color: ffcb05; -fx-border-color: #000000;" text="Check Users List">
+                  <font>
+                      <Font name="System Bold" size="16.0" />
+                  </font>
+              </Button>
+              <Button fx:id="insertUser" layoutX="102.0" layoutY="322.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="232.0" style="-fx-background-color: ffcb05; -fx-border-color: #000000;" text="Insert User">
+                  <font>
+                      <Font name="System Bold" size="16.0" />
+                  </font>
+              </Button>
+              <Button fx:id="deleteUser" layoutX="102.0" layoutY="365.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="232.0" style="-fx-background-color: ffcb05; -fx-border-color: #000000;" text="Delete User">
+                  <font>
+                      <Font name="System Bold" size="16.0" />
+                  </font>
+              </Button>
+              <Button fx:id="updateUser" layoutX="102.0" layoutY="409.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="232.0" style="-fx-background-color: ffcb05; -fx-border-color: #000000;" text="Update User">
+                  <font>
+                      <Font name="System Bold" size="16.0" />
+                  </font>
+              </Button>
+              <Button fx:id="goToDatabase" layoutX="102.0" layoutY="451.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="232.0" style="-fx-background-color: ffcb05; -fx-border-color: #000000;" text="Go To DataBase">
+                  <font>
+                      <Font name="System Bold" size="16.0" />
+                  </font>
+              </Button>
+            </children>
+        </Pane>
+      <ImageView fitHeight="688.0" fitWidth="483.0" layoutX="436.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Admin.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
