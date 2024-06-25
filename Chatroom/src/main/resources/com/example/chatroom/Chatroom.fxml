@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatroom.ChatroomController">
+    <children>
+        <Pane layoutY="-3.0" prefHeight="679.0" prefWidth="275.0" style="-fx-background-color: #2C3539;">
+            <children>
+                <ImageView fitHeight="210.0" fitWidth="284.0" layoutX="-5.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@LOGO.png" />
+                    </image>
+                </ImageView>
+                <CheckBox fx:id="available" layoutX="29.0" layoutY="166.0" mnemonicParsing="false" onAction="#available" prefHeight="26.0" prefWidth="169.0" style="-fx-background-color: ffcb05; -fx-font-family: Cursive; -fx-font-weight: bold; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-border-width: 1px; -fx-border-color: #000000;" text="Available" textAlignment="CENTER" textOverrun="CLIP" />
+                <Button fx:id="logout" layoutX="53.0" layoutY="612.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: ffcb05;" text="Logout">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="save" layoutX="53.0" layoutY="561.0" mnemonicParsing="false" onAction="#save" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: ffcb05;" text="Save" textFill="#0d0d0d">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font></Button>
+            </children>
+        </Pane>
+        <Pane layoutX="275.0" layoutY="608.0" prefHeight="67.0" prefWidth="677.0" style="-fx-background-color: #2C3539;">
+            <children>
+                <Button fx:id="send" layoutX="600.0" layoutY="16.0" mnemonicParsing="false" onAction="#send" style="-fx-background-color: ffcb05;" text="Send" textFill="#070707">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="textfield" layoutX="25.0" layoutY="11.0" prefHeight="45.0" prefWidth="553.0" promptText="Enter text here...." style="-fx-border-radius: 10px; -fx-border-style: solid; -fx-padding: 8px 12حء; -fx-background-radius: 10px;" />
+            </children>
+        </Pane>
+        <ScrollPane fx:id="scrollpane" layoutX="276.0" layoutY="57.0" prefHeight="553.0" prefWidth="674.0">
+            <content>
+                <VBox fx:id="vboxMessage" prefHeight="551.0" prefWidth="672.0" style="-fx-background-color: #F8F8FF;" />
+            </content>
+        </ScrollPane>
+        <Pane layoutX="273.0" prefHeight="58.0" prefWidth="677.0" style="-fx-background-color: #2C3539;">
+            <children>
+                <ImageView fitHeight="45.0" fitWidth="49.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@AIU.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="labelUsername" layoutX="60.0" layoutY="4.0" prefHeight="30.0" prefWidth="169.0" text="username" textAlignment="RIGHT" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+            <Label fx:id="state" layoutX="60.0" layoutY="28.0" prefHeight="26.0" prefWidth="113.0" text="State" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatroom.ChatroomController">
+    <children>
+        <Pane layoutY="-3.0" prefHeight="679.0" prefWidth="275.0" style="-fx-background-color: #2C3539;">
+            <children>
+                <ImageView fitHeight="210.0" fitWidth="284.0" layoutX="-5.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@LOGO.png" />
+                    </image>
+                </ImageView>
+                <ComboBox fx:id="status" layoutY="231.0" prefHeight="29.0" prefWidth="275.0" promptText="Status" style="-fx-background-color: #FFF8DC; -fx-border-color: gray; -fx-border-width: 3px; -fx-border-radius: 9px; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0); -fx-background-radius: 12px;" />
+                <CheckBox fx:id="available" layoutX="77.0" layoutY="166.0" mnemonicParsing="false" onAction="#available" prefHeight="26.0" prefWidth="121.0" style="-fx-background-color: #FFF8DC; -fx-font-family: Cursive; -fx-font-weight: bold; -fx-border-radius: 8px; -fx-background-radius: 10px; -fx-border-width: 3px; -fx-border-color: gray;" text="Available" textAlignment="CENTER" textOverrun="CLIP" />
+                <Button fx:id="logout" layoutX="53.0" layoutY="612.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: ffcb05;" text="Logout">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+            <Label fx:id="state" layoutX="83.0" layoutY="198.0" prefHeight="26.0" prefWidth="113.0" text="State" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+        <Pane layoutX="275.0" layoutY="608.0" prefHeight="65.0" prefWidth="674.0" style="-fx-background-color: #D3D3D3;">
+            <children>
+                <Button fx:id="send" layoutX="611.0" layoutY="14.0" mnemonicParsing="false" onAction="#send" style="-fx-background-color: #9ACD32;" text="Send">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="textfield" layoutX="25.0" layoutY="11.0" prefHeight="45.0" prefWidth="553.0" promptText="Enter text here...." style="-fx-border-radius: 10px; -fx-border-style: solid; -fx-padding: 8px 12حء; -fx-background-radius: 10px;" />
+            </children>
+        </Pane>
+        <ScrollPane fx:id="scrollpane" layoutX="276.0" layoutY="57.0" prefHeight="553.0" prefWidth="674.0">
+            <content>
+                <VBox fx:id="vboxMessage" prefHeight="551.0" prefWidth="666.0" />
+            </content>
+        </ScrollPane>
+        <Pane layoutX="273.0" prefHeight="58.0" prefWidth="677.0" style="-fx-background-color: #000033;">
+            <children>
+                <ImageView fitHeight="45.0" fitWidth="49.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@AIU.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="60.0" layoutY="11.0" prefHeight="37.0" prefWidth="162.0" style="-fx-font-weight: bolder; -fx-font-size: 20px; -fx-font-family: arial black;" text="AIU ChatFDT" textFill="#ff7606">
+                    <font>
+                        <Font name="System Bold" size="29.0" />
+                    </font>
+                </Label>
+                <Label fx:id="labelUsername" layoutX="551.0" layoutY="11.0" prefHeight="37.0" prefWidth="113.0" text="username" textAlignment="RIGHT" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Button fx:id="save" layoutX="293.0" layoutY="11.0" mnemonicParsing="false" onAction="#save" prefHeight="27.0" prefWidth="141.0" style="-fx-background-color: ffcb05;" text="save">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font></Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

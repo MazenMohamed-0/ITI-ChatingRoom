@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatroom.SignUpController">
+    <children>
+      <ImageView fitHeight="690.0" fitWidth="1017.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@testt.png" />
+         </image>
+      </ImageView>
+        <Pane layoutX="262.0" layoutY="28.0" prefHeight="603.0" prefWidth="436.0" style="-fx-background-color: #F8F8FF; -fx-border-color: #000000;">
+            <children>
+                <Button fx:id="signup" layoutX="99.0" layoutY="445.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="239.0" style="-fx-background-color: ffcb05; -fx-border-color: #000000;" text="Sign Up">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="password" alignment="CENTER" layoutX="99.0" layoutY="289.0" prefHeight="35.0" prefWidth="239.0" promptText="Password">
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </TextField>
+                <TextField fx:id="username" alignment="CENTER" layoutX="99.0" layoutY="236.0" prefHeight="35.0" prefWidth="239.0" promptText="User name" />
+                <TextField fx:id="confirmpassword" alignment="CENTER" layoutX="99.0" layoutY="337.0" prefHeight="35.0" prefWidth="239.0" promptText="Confirm password">
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </TextField>
+                <Button fx:id="cancel" layoutX="99.0" layoutY="492.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="239.0" style="-fx-background-color: ffcb05; -fx-border-color: #000000;" text="Cancel">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="257.0" fitWidth="386.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@LOGO.png" />
+                    </image>
+                </ImageView>
+            <Label fx:id="Error" layoutX="99.0" layoutY="448.0" prefHeight="17.0" prefWidth="239.0" />
+            </children>
+        </Pane>
+        <Button fx:id="back" layoutX="14.0" layoutY="612.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="185.0" style="-fx-background-color: ffcb05;" text="Back To Login">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
